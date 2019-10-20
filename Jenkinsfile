@@ -4,7 +4,7 @@ pipeline {
     stage('test') {
       steps {
         container('nodejs') {
-          sh "echo 'Hello'"
+          sh "curl ipinfo.io/ip"
           }
         }
       }
