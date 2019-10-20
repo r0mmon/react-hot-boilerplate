@@ -3,7 +3,10 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        sh 'echo "Hello"'
+        container('nodejs') {
+          sh "echo 'Hello'"
+          }
+        }
       }
     }
   }
