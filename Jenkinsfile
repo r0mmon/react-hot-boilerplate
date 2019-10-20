@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('test') {
       steps {
-          curl ipinfo.io/ip
+          sh 'curl ipinfo.io/ip'
       }
     }
   }
