@@ -3,9 +3,7 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        container('nodejs') {
-          sh "curl ipinfo.io/ip"
-        }
+          curl ipinfo.io/ip
       }
     }
   }
