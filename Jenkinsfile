@@ -5,7 +5,6 @@ pipeline {
       steps {
         container('nodejs') {
           sh "curl ipinfo.io/ip"
-          }
         }
       }
     }
